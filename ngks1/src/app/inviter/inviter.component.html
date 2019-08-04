@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="left">
+    <div>
+      <h3>Invite Others</h3>
+      <p class="message">Invite others to easily register</p>
+    </div>
+    <div *ngFor="let item of dataArray; let i = index">
+      <div *ngIf="item.hasActiveCoverage">
+        <form [formGroup]="inviteeForm">
+          <div formArrayName="inviterDetails">
+            <div [formGroupName]="i">
+              <label class="textLabel" for="emailAddress">Email Address</label>
+              <div class="columnForm">
+                <input
+                  type="text"
+                  formControlName="emailAddress"
+                  id="emailAddress"
+                />
+                <button (click)="onSubmit(i)">Submit</button>
+              </div>
+              <span *ngIf="item.isDelegateEligible && !item.isDelegate">
+                <p>
+                  <input
+                    type="checkbox"
+                    formControlName="isSubDelegateEnable"
+                    name="isSubDelegateEnable"
+                    id="isSubDelegateEnable"
+                  />
+                  <label for="isSubDelegateEnable"
+                    >Allow to view dependents information</label
+                  >
+                </p>
+                <p>
+                  <input
+                    type="checkbox"
+                    formControlName="isDelegateEnable"
+                    name="isDelegateEnable"
+                    id="isDelegateEnable"
+                  />
+                  <label for="isDelegateEnable"
+                    >Allow to view my information</label
+                  >
+                </p>
+              </span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <ul>
+      <li>And thats message no. 1</li>
+      <li>And thats message no. 2</li>
+      <li>And thats message no. 3</li>
+      <li>And thats message no. 4</li>
+      <li>And thats message no. 5</li>
+      <li>And thats message no. 6</li>
+    </ul>
+  </div>
+</div>

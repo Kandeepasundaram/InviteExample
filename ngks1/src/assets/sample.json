@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "firstName": "KS",
+      "lastName": "Sera",
+      "dob": "03041983",
+      "isDelegate": false,
+      "isDelegateEligible": true,
+      "isRegistered": true,
+      "relationshipcode": "spouse/partner",
+      "isAgeEligible": true,
+      "isRegistrationEligible":true,
+      "invitationStatus": "P",
+      "inviteeEmail": "test@test.com",
+      "hasActiveCoverage": true,
+      "uniqueId": "KS1"
+    },
+    {
+      "firstName": "GS",
+      "lastName": "Sera",
+      "dob": "03041986",
+      "isDelegate": false,
+      "isDelegateEligible": true,
+      "isRegistered": true,
+      "relationshipcode": "spouse/partner",
+      "isAgeEligible": true,
+      "isRegistrationEligible":true,
+      "invitationStatus": "P",
+      "inviteeEmail": "test@test.com",
+      "hasActiveCoverage": true,
+      "uniqueId": "GS1"
+    },
+    {
+      "firstName": "TKS",
+      "lastName": "Sera",
+      "dob": "03042015",
+      "isDelegate": false,
+      "isDelegateEligible": false,
+      "isRegistered": false,
+      "relationshipcode": "spouse/partner",
+      "isAgeEligible": true,
+      "isRegistrationEligible":true,
+      "invitationStatus": "P",
+      "inviteeEmail": "test@test.com",
+      "hasActiveCoverage": true,
+      "uniqueId": "TKS1"
+    }
+  ],
+  "responseStatus": {
+    "status": 200,
+    "responseCode": "100000"
+  }
+}
