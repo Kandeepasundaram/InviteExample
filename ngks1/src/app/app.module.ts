@@ -6,18 +6,20 @@ import { AppComponent } from './app.component';
 import { InviterComponent } from './inviter/inviter.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LeftComponent } from './inviter/left/left.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InviterComponent
+    InviterComponent,
+    LeftComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
